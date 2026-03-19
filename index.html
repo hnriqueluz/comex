@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio Exterior Brasil 2026 - E-book Completo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        /* Scrollbar personalizada */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2E86AB;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1a5f8f;
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        /* CAPA */
+        .cover {
+            background: linear-gradient(135deg, #2E86AB 0%, #1a5f8f 100%);
+            color: white;
+            padding: 120px 40px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .cover-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+        }
+
+        .cover h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            line-height: 1.2;
+        }
+
+        .cover h2 {
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            opacity: 0.95;
+        }
+
+        .cover-divider {
+            width: 80px;
+            height: 3px;
+            background: white;
+            margin: 40px auto;
+            opacity: 0.7;
+        }
+
+        .cover-subtitle {
+            font-size: 16px;
+            margin-bottom: 60px;
+            opacity: 0.9;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        .cover-author {
+            font-size: 14px;
+            margin-top: 100px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            opacity: 0.85;
+        }
+
+        .cover-author strong {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .cover-date {
+            font-size: 13px;
+            margin-top: 20px;
+            opacity: 0.75;
+        }
+
+        /* SUMÁRIO */
+        .toc-page {
+            padding: 80px 60px;
+            page-break-after: always;
+            background: white;
+        }
+
+        .toc-page h1 {
+            font-size: 36px;
+            color: #2E86AB;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 20px;
+            border-left: 3px solid #2E86AB;
+            padding-left: 20px;
+        }
+
+        .toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toc-list a:hover {
+            color: #2E86AB;
+            font-weight: 600;
+            padding-left: 10px;
+        }
+
+        .toc-number {
+            color: #2E86AB;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        /* SEÇÕES */
+        .page {
+            padding: 60px;
+            page-break-after: always;
+            min-height: 100vh;
+        }
+
+        .page h1 {
+            color: #2E86AB;
+            font-size: 32px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2E86AB;
+            font-weight: 700;
+        }
+
+        .page h2 {
+            color: #1a5f8f;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .page h3 {
+            color: #2E86AB;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .page p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            text-align: justify;
+            color: #444;
+        }
+
+        .page ul, .page ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .page li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* BOXES E DESTAQUE */
+        .highlight-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 4px solid #2E86AB;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+            line-height: 1.7;
+        }
+
+        .warning-box {
+            background: #FFF3CD;
+            border-left: 4px solid #FFC107;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background: #D4EDDA;
+            border-left: 4px solid #28A745;
+            padding: 20px 25px;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+
+        .chart-container {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .chart-container svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* TABELAS */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+
+        table thead {
+            background: #2E86AB;
+            color: white;
+        }
+
+        table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        table tbody tr:hover {
+            background: #e9ecef;
+        }
+
+        /* NAVEGAÇÃO */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 60px;
+            background: #f8f9fa;
+            border-top: 1px solid #ddd;
+            gap: 20px;
+        }
+
+        .nav-buttons button {
+            padding: 12px 30px;
+            background: #2E86AB;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background: #1a5f8f;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .nav-buttons button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .page-indicator {
+            color: #666;
+            font-weight: 600;
+        }
+
+        /* STICKY TOC */
+        .toc-sticky {
+            position: fixed;
+            right: 30px;
+            top: 30px;
+            background: white;
+            border: 2px solid #2E86AB;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+        }
+
+        .toc-sticky:hover {
+            transform: scale(1.1);
+            background: #2E86AB;
+            color: white;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 60px;
+            text-align: center;
+            font-size: 13px;
+            border-top: 3px solid #2E86AB;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        .footer strong {
+            color: #2E86AB;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .container {
+                box-shadow: none;
+            }
+
+            .cover {
+                padding: 60px 30px;
+                min-height: auto;
+            }
+
+            .cover h1 {
+                font-size: 32px;
+            }
+
+            .cover h2 {
+                font-size: 16px;
+            }
+
+            .page {
+                padding: 40px 30px;
+            }
+
+            .page h1 {
+                font-size: 24px;
+            }
+
+            .toc-page {
+                padding: 40px 30px;
+            }
+
+            .nav-buttons {
+                padding: 30px;
+                flex-direction: column;
+            }
+
+            .toc-sticky {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+        }
+
+        /* IMPRESSÃO */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            .toc-sticky, .nav-buttons {
+                display: none;
+            }
+
+            .page {
+                page-break-inside: avoid;
+                box-shadow: none;
+                border: none;
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- CAPA -->
+        <div class="cover">
+            <div class="cover-content">
+                <h1>Comércio Exterior Brasil</h1>
+                <h2>2026</h2>
+                <div class="cover-divider"></div>
+                <p class="cover-subtitle">
+                    Processos de Importação e Exportação: Visão Operacional, Jurídica e Estratégica
+                </p>
+                <p class="cover-subtitle">
+                    Material educativo desenvolvido para profissionais de comércio exterior, operações logísticas e gestão de cadeias de suprimento
+                </p>
+                <div class="cover-author">
+                    Autora: <strong>Ester Nascimento</strong>
+                    <div style="font-size: 13px; margin-top: 15px; opacity: 0.8;">
+                        Especialista em Comércio Exterior<br>
+                        Experiência em Processos de Importação e Exportação
+                    </div>
+                </div>
+                <p class="cover-date">Março 2026 | Versão 2.0 com Gráficos e Ilustrações</p>
+            </div>
+        </div>
+
+        <!-- SUMÁRIO -->
+        <div class="toc-page">
+            <h1>Sumário</h1>
+            <ul class="toc-list">
+                <li><a href="#section-1"><span class="toc-number">01</span>Introdução ao Comércio Exterior Brasileiro</a></li>
+                <li><a href="#section-2"><span class="toc-number">02</span>Acrônimos e Definições Fundamentais</a></li>
+                <li><a href="#section-3"><span class="toc-number">03</span>Incoterms - Alocação de Riscos</a></li>
+                <li><a href="#section-4"><span class="toc-number">04</span>Processo de Importação End-to-End</a></li>
+                <li><a href="#section-5"><span class="toc-number">05</span>Canais de Parametrização</a></li>
+                <li><a href="#section-6"><span class="toc-number">06</span>Processo de Exportação End-to-End</a></li>
+                <li><a href="#section-7"><span class="toc-number">07</span>DUIMP vs. DI - Modernização</a></li>
+                <li><a href="#section-8"><span class="toc-number">08</span>Custos na Importação - Landed Cost</a></li>
+                <li><a href="#section-9"><span class="toc-number">09</span>Contêineres - Escolha Estratégica</a></li>
+                <li><a href="#section-10"><span class="toc-number">10</span>Geopolítica e Impactos</a></li>
+                <li><a href="#section-11"><span class="toc-number">11</span>Armadores - Poder e Influência</a></li>
+                <li><a href="#section-12"><span class="toc-number">12</span>Caso Prático - Importação Realista</a></li>
+                <li><a href="#section-13"><span class="toc-number">13</span>Conclusão e Recomendações</a></li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 1 -->
+        <div class="page" id="section-1">
+            <h1>Introdução ao Comércio Exterior Brasileiro</h1>
+
+            <p>O comércio exterior brasileiro passou por uma profunda modernização, especialmente com o Portal Único Siscomex. O que antes era fragmentado, burocrático e imprevisível, agora caminha para integração, automação e gestão de risco.</p>
+
+            <div class="highlight-box">
+                <strong>📌 Ponto crítico:</strong> Esta apostila não é apenas conceitual — ela foi construída para formar visão operacional e estratégica sobre processos de importação e exportação.
+            </div>
+
+            <h2>Contexto Atual</h2>
+            <p>O mercado globalizado enfrenta volatilidade crescente:</p>
+            <ul>
+                <li><strong>Geopolítica intensificada:</strong> Tensões comerciais, sanções, bloqueios marítimos</li>
+                <li><strong>Fretes voláteis:</strong> Oscilação de +400% em períodos de crise</li>
+                <li><strong>Pressão de margens:</strong> Custo de capital de giro elevado</li>
+                <li><strong>Regulação dinâmica:</strong> Mudanças frequentes em legislação de comex</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ Realidade:</strong> Empresas que não dominam comex end-to-end estão operando mais caras sem perceber. A invisibilidade de custos é o maior inimigo da lucratividade.
+            </div>
+
+            <h2>Objetivo Deste Material</h2>
+            <p>Fornecer visão integrada sobre:</p>
+            <ul>
+                <li><strong>Operacional:</strong> Fluxos, documentos, prazos, sistemas</li>
+                <li><strong>Jurídica:</strong> Regulamentação, compliance, riscos legais</li>
+                <li><strong>Financeira:</strong> Custos, tributação, capital de giro</li>
+                <li><strong>Estratégica:</strong> Negociação, gestão de risco, competitividade</li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 2 -->
+        <div class="page" id="section-2">
+            <h1>Acrônimos e Definições Fundamentais</h1>
+
+            <p>Comércio exterior funciona em torno de documentos e sistemas. Aqui estão os mais críticos:</p>
+
+            <h2>Documentação Aduaneira</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Acrônimo</th>
+                        <th>Significado</th>
+                        <th>Contexto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DUIMP</strong></td>
+                        <td>Declaração Única de Importação</td>
+                        <td>Registro único de importação no Siscomex</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DUE</strong></td>
+                        <td>Declaração Única de Exportação</td>
+                        <td>Registro único de exportação</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LPCO</strong></td>
+                        <td>Licenças, Permissões, Certificados e Outros</td>
+                        <td>Documentos especiais (ANVISA, MAPA, etc.)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NCM</strong></td>
+                        <td>Nomenclatura Comum do Mercosul</td>
+                        <td>Classificação fiscal do produto (8 dígitos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LI</strong></td>
+                        <td>Licença de Importação</td>
+                        <td>Autorização prévia para importação (produtos controlados)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Transporte e Logística</h2>
+            <ul>
+                <li><strong>BL (Bill of Lading):</strong> Documento de embarque marítimo - título de posse da carga</li>
+                <li><strong>AWB (Air Waybill):</strong> Documento de embarque aéreo</li>
+                <li><strong>Commercial Invoice:</strong> Fatura comercial do fornecedor</li>
+                <li><strong>Packing List:</strong> Relação detalhada de volumes e conteúdo</li>
+            </ul>
+
+            <h2>Órgãos Regulatórios</h2>
+            <ul>
+                <li><strong>RFB:</strong> Receita Federal do Brasil (aduanas)</li>
+                <li><strong>SECEX:</strong> Secretaria de Comércio Exterior</li>
+                <li><strong>ANVISA:</strong> Agência Nacional de Vigilância Sanitária (alimentos, medicamentos)</li>
+                <li><strong>MAPA:</strong> Ministério da Agricultura (produtos agrícolas)</li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 3 -->
+        <div class="page" id="section-3">
+            <h1>Incoterms - Alocação de Riscos</h1>
+
+            <p>Os Incoterms (International Commercial Terms) definem responsabilidades logísticas, financeiras e de risco entre exportador e importador.</p>
+
+            <div class="warning-box">
+                <strong>⚠️ Ponto crítico:</strong> Escolher errado o Incoterm impacta diretamente custo, lead time, capital de giro e risco operacional. Não é uma decisão apenas de comex — é decisão multifuncional.
+            </div>
+
+            <div class="chart-container">
+                <svg viewBox="0 0 1000 350" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Título -->
+                  <text x="500" y="25" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+                    Incoterms - Alocação de Responsabilidades e Riscos
+                  </text>
+
+                  <!-- Seta de Risco -->
+                  <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+                    </marker>
+                  </defs>
+
+                  <!-- Linha de Risco do Exportador ao Importador -->
+                  <line x1="80" y1="100" x2="920" y2="100" stroke="#E74C3C" stroke-width="3" marker-end="url(#arrowhead)"/>
+                  <text x="50" y="95" font-size="11" fill="#E74C3C" font-weight="bold">Risco do Exportador</text>
+                  <text x="880" y="95" font-size="11" fill="#E74C3C" font-weight="bold">Risco do Importador</text>
+
+                  <!-- EXW -->
+                  <circle cx="100" cy="100" r="20" fill="#C0392B" opacity="0.2" stroke="#C0392B" stroke-width="2"/>
+                  <text x="100" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">EXW</text>
+                  <text x="100" y="240" font-size="10" text-anchor="middle" fill="#666">Ex Works</text>
+                  <text x="100" y="255" font-size="9" text-anchor="middle" fill="#999">Máximo risco</text>
+                  <text x="100" y="270" font-size="9" text-anchor="middle" fill="#999">para importador</text>
+
+                  <!-- FCA -->
+                  <circle cx="240" cy="100" r="20" fill="#E67E22" opacity="0.2" stroke="#E67E22" stroke-width="2"/>
+                  <text x="240" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">FCA</text>
+                  <text x="240" y="240" font-size="10" text-anchor="middle" fill="#666">Free Carrier</text>
+                  <text x="240" y="255" font-size="9" text-anchor="middle" fill="#999">Compartilhado</text>
+                  <text x="240" y="270" font-size="9" text-anchor="middle" fill="#999">(terrestre)</text>
+
+                  <!-- FOB -->
+                  <circle cx="380" cy="100" r="20" fill="#F39C12" opacity="0.2" stroke="#F39C12" stroke-width="2"/>
+                  <text x="380" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">FOB</text>
+                  <text x="380" y="240" font-size="10" text-anchor="middle" fill="#666">Free on Board</text>
+                  <text x="380" y="255" font-size="9" text-anchor="middle" fill="#999">Equilíbrio</text>
+                  <text x="380" y="270" font-size="9" text-anchor="middle" fill="#999">operacional</text>
+
+                  <!-- CIF -->
+                  <circle cx="550" cy="100" r="20" fill="#3498DB" opacity="0.2" stroke="#3498DB" stroke-width="2"/>
+                  <text x="550" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">CIF</text>
+                  <text x="550" y="240" font-size="10" text-anchor="middle" fill="#666">Cost, Insurance</text>
+                  <text x="550" y="255" font-size="9" text-anchor="middle" fill="#999">&amp; Freight</text>
+                  <text x="550" y="270" font-size="9" text-anchor="middle" fill="#999">Frete pago</text>
+
+                  <!-- DAP -->
+                  <circle cx="720" cy="100" r="20" fill="#27AE60" opacity="0.2" stroke="#27AE60" stroke-width="2"/>
+                  <text x="720" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">DAP</text>
+                  <text x="720" y="240" font-size="10" text-anchor="middle" fill="#666">Delivered at Place</text>
+                  <text x="720" y="255" font-size="9" text-anchor="middle" fill="#999">Entrega</text>
+                  <text x="720" y="270" font-size="9" text-anchor="middle" fill="#999">no destino</text>
+
+                  <!-- DDP -->
+                  <circle cx="900" cy="100" r="20" fill="#1ABC9C" opacity="0.2" stroke="#1ABC9C" stroke-width="2"/>
+                  <text x="900" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#1a1a1a">DDP</text>
+                  <text x="900" y="240" font-size="10" text-anchor="middle" fill="#666">Delivered Duty Paid</text>
+                  <text x="900" y="255" font-size="9" text-anchor="middle" fill="#999">Máxima</text>
+                  <text x="900" y="270" font-size="9" text-anchor="middle" fill="#999">conveniência</text>
+
+                  <!-- Legenda de custo -->
+                  <text x="100" y="330" font-size="10" fill="#666">💰 Custo mínimo ← → 💰💰💰 Custo máximo</text>
+                </svg>
+            </div>
+
+            <h2>Recomendação Estratégica</h2>
+            <div class="success-box">
+                <strong>✓ Padrão recomendado:</strong> FOB para operações padrão (equilíbrio entre custo e controle) ou CIF quando fornecedor é experiente e confiável (simplifica documentação de frete).
+            </div>
+        </div>
+
+        <!-- SEÇÃO 4 -->
+        <div class="page" id="section-4">
+            <h1>Processo de Importação End-to-End</h1>
+
+            <p>O processo de importação é dividido em 7 etapas críticas, cada uma com risco e impacto específicos:</p>
+
+            <h2>Etapa 1: Planejamento (T-60 dias)</h2>
+            <div class="highlight-box">
+                <strong>Itens críticos:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Classificação fiscal correta (NCM)</li>
+                    <li>Verificação de necessidade de LPCO (órgãos especiais)</li>
+                    <li>Análise tributária (II, IPI, PIS, COFINS, ICMS)</li>
+                    <li>Estimativa de lead time realista</li>
+                </ul>
+            </div>
+            <p><strong>⚠️ Erro comum:</strong> Tratar planejamento como burocracia. Na verdade, ele define custo e risco da operação.</p>
+
+            <h2>Etapa 2: Negociação</h2>
+            <ul>
+                <li><strong>Preço:</strong> Melhor negociar agora do que sofrer aumento de frete depois</li>
+                <li><strong>Incoterm:</strong> Decisão que impacta custo e responsabilidades</li>
+                <li><strong>Modal:</strong> Marítimo (lento, barato), aéreo (rápido, caro), terrestre (curta distância)</li>
+                <li><strong>Prazos:</strong> Confirmar data de embarque e chegada estimada</li>
+            </ul>
+
+            <h2>Etapa 3: Embarque</h2>
+            <p>Documentos essenciais que não podem ter erros:</p>
+            <ul>
+                <li><strong>Commercial Invoice:</strong> Fatura comercial com especificações técnicas completas</li>
+                <li><strong>Packing List:</strong> Descreve cada volume (peso, dimensão, conteúdo)</li>
+                <li><strong>BL/AWB:</strong> Documento de transporte (emitido pelo armador/companhia aérea)</li>
+            </ul>
+
+            <h2>Etapa 4: Chegada + DUIMP</h2>
+            <ul>
+                <li>Registro da DUIMP no Siscomex (com todos os dados)</li>
+                <li>Vinculação automática de documentos (BL, Commercial Invoice, Packing List)</li>
+                <li>Geração de número de controle da Receita Federal</li>
+            </ul>
+
+            <h2>Etapa 5: Parametrização</h2>
+            <p>O sistema de risco da Receita Federal "escolhe" qual nível de conferência sua carga terá:</p>
+            <ul>
+                <li><strong>Verde:</strong> Desembaraço automático (sem conferência)</li>
+                <li><strong>Amarelo:</strong> Análise documental</li>
+                <li><strong>Vermelho:</strong> Conferência física completa (item por item)</li>
+                <li><strong>Cinza:</strong> Análise especial (investigação de fraude)</li>
+            </ul>
+
+            <div class="chart-container">
+                <svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Título -->
+                  <text x="450" y="25" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+                    Canais de Parametrização - Impacto Operacional
+                  </text>
+
+                  <!-- Canal Verde -->
+                  <rect x="50" y="80" width="180" height="200" fill="#27AE60" opacity="0.15" stroke="#27AE60" stroke-width="3" rx="10"/>
+                  <circle cx="140" cy="120" r="25" fill="#27AE60"/>
+                  <text x="140" y="130" font-size="28" font-weight="bold" fill="white" text-anchor="middle">✓</text>
+                  <text x="140" y="165" font-size="14" font-weight="bold" text-anchor="middle" fill="#27AE60">VERDE</text>
+                  <text x="140" y="190" font-size="11" text-anchor="middle" fill="#1a1a1a">Desembaraço</text>
+                  <text x="140" y="205" font-size="11" text-anchor="middle" fill="#1a1a1a">Automático</text>
+                  <text x="140" y="230" font-size="10" text-anchor="middle" fill="#666">Lead time:</text>
+                  <text x="140" y="245" font-size="10" text-anchor="middle" fill="#666">3-5 dias</text>
+                  <text x="140" y="265" font-size="10" font-weight="bold" text-anchor="middle" fill="#27AE60">Custo: Mínimo</text>
+
+                  <!-- Canal Amarelo -->
+                  <rect x="280" y="80" width="180" height="200" fill="#F39C12" opacity="0.15" stroke="#F39C12" stroke-width="3" rx="10"/>
+                  <circle cx="370" cy="120" r="25" fill="#F39C12"/>
+                  <text x="370" y="125" font-size="28" font-weight="bold" fill="white" text-anchor="middle">!</text>
+                  <text x="370" y="165" font-size="14" font-weight="bold" text-anchor="middle" fill="#F39C12">AMARELO</text>
+                  <text x="370" y="190" font-size="11" text-anchor="middle" fill="#1a1a1a">Análise</text>
+                  <text x="370" y="205" font-size="11" text-anchor="middle" fill="#1a1a1a">Documental</text>
+                  <text x="370" y="230" font-size="10" text-anchor="middle" fill="#666">Lead time:</text>
+                  <text x="370" y="245" font-size="10" text-anchor="middle" fill="#666">5-10 dias</text>
+                  <text x="370" y="265" font-size="10" font-weight="bold" text-anchor="middle" fill="#F39C12">Custo: Moderado</text>
+
+                  <!-- Canal Vermelho -->
+                  <rect x="510" y="80" width="180" height="200" fill="#E74C3C" opacity="0.15" stroke="#E74C3C" stroke-width="3" rx="10"/>
+                  <circle cx="600" cy="120" r="25" fill="#E74C3C"/>
+                  <text x="600" y="130" font-size="28" font-weight="bold" fill="white" text-anchor="middle">⚠</text>
+                  <text x="600" y="165" font-size="14" font-weight="bold" text-anchor="middle" fill="#E74C3C">VERMELHO</text>
+                  <text x="600" y="190" font-size="11" text-anchor="middle" fill="#1a1a1a">Conferência</text>
+                  <text x="600" y="205" font-size="11" text-anchor="middle" fill="#1a1a1a">Física</text>
+                  <text x="600" y="230" font-size="10" text-anchor="middle" fill="#666">Lead time:</text>
+                  <text x="600" y="245" font-size="10" text-anchor="middle" fill="#666">10-20 dias</text>
+                  <text x="600" y="265" font-size="10" font-weight="bold" text-anchor="middle" fill="#E74C3C">Custo: Alto</text>
+
+                  <!-- Canal Cinza -->
+                  <rect x="740" y="80" width="140" height="200" fill="#95A5A6" opacity="0.15" stroke="#95A5A6" stroke-width="3" rx="10"/>
+                  <circle cx="810" cy="120" r="25" fill="#95A5A6"/>
+                  <text x="810" y="130" font-size="24" font-weight="bold" fill="white" text-anchor="middle">🔍</text>
+                  <text x="810" y="165" font-size="14" font-weight="bold" text-anchor="middle" fill="#95A5A6">CINZA</text>
+                  <text x="810" y="190" font-size="11" text-anchor="middle" fill="#1a1a1a">Análise</text>
+                  <text x="810" y="205" font-size="11" text-anchor="middle" fill="#1a1a1a">Especial</text>
+                  <text x="810" y="230" font-size="10" text-anchor="middle" fill="#666">Lead time:</text>
+                  <text x="810" y="245" font-size="10" text-anchor="middle" fill="#666">20+ dias</text>
+                  <text x="810" y="265" font-size="10" font-weight="bold" text-anchor="middle" fill="#95A5A6">Custo: Crítico</text>
+                </svg>
+            </div>
+
+            <h2>Etapa 6: Desembaraço</h2>
+            <ul>
+                <li>Conferência aduaneira (conforme canal atribuído)</li>
+                <li>Eventuais correções documentais (se necessário)</li>
+                <li>Liberação da carga</li>
+            </ul>
+
+            <h2>Etapa 7: Pós-Desembaraço</h2>
+            <ul>
+                <li>Transporte interno até destino</li>
+                <li>Auditoria interna (conferência física vs. documentação)</li>
+                <li>Compliance fiscal e cambial</li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 5 -->
+        <div class="page" id="section-5">
+            <h1>Canais de Parametrização - Visão Detalhada</h1>
+
+            <p>A parametrização não é sorte — é reflexo direto da gestão de risco da sua empresa.</p>
+
+            <h2>O que influencia a parametrização?</h2>
+            <div class="highlight-box">
+                <strong>Fatores principais:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Histórico da empresa:</strong> Operações passadas com sucesso aumentam score</li>
+                    <li><strong>Histórico do fornecedor:</strong> Primeira operação = risco maior</li>
+                    <li><strong>Qualidade de documentação:</strong> Erros passados prejudicam futuras operações</li>
+                    <li><strong>Tipo de produto:</strong> Eletrônicos, químicos, alimentos = maior fiscalização</li>
+                    <li><strong>Valor da operação:</strong> Valores anormais geram alerta</li>
+                    <li><strong>LPCO necessário:</strong> Documentos especiais aumentam complexidade</li>
+                </ul>
+            </div>
+
+            <h2>Estratégia para ficar no Verde</h2>
+            <div class="success-box">
+                <strong>✓ Boas práticas:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Documentação 100% correta desde a primeira operação</li>
+                    <li>Comunicação proativa com despachante</li>
+                    <li>Antecipação de informações (dados 7 dias antes)</li>
+                    <li>LPCO coletado com antecedência</li>
+                    <li>Histórico limpo com Receita Federal</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 6 -->
+        <div class="page" id="section-6">
+            <h1>Processo de Exportação End-to-End</h1>
+
+            <p>Enquanto importação é baseada em DUIMP, exportação segue fluxo similar mas com DUE (Declaração Única de Exportação).</p>
+
+            <h2>Diferenças Importação vs. Exportação</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Importação</th>
+                        <th>Exportação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Documento principal</strong></td>
+                        <td>DUIMP</td>
+                        <td>DUE</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Foco regulatório</strong></td>
+                        <td>Tributação (tributos a pagar)</td>
+                        <td>Compliance cambial</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Comprovação</strong></td>
+                        <td>Desembaraço</td>
+                        <td>Averbação (saída física comprovada)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Benefícios fiscais</strong></td>
+                        <td>Raros (drawback)</td>
+                        <td>ICMS isenção, crédito outorgado</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>5 Etapas da Exportação</h2>
+            <h3>1. Produção e Preparação</h3>
+            <ul>
+                <li>Produto fabricado conforme especificação cliente</li>
+                <li>Qualidade testada (se aplicável)</li>
+                <li>Embalagem preparada para exportação</li>
+            </ul>
+
+            <h3>2. Registro da DUE</h3>
+            <ul>
+                <li>Preenchimento em Siscomex com dados completos</li>
+                <li>Vinculação de documentos (Fatura comercial, Packing List)</li>
+                <li>Geração de número de controle</li>
+            </ul>
+
+            <h3>3. Despacho Aduaneiro</h3>
+            <ul>
+                <li>Verificação de documentação</li>
+                <li>Conformidade com legislação de exportação</li>
+                <li>Autorização para saída</li>
+            </ul>
+
+            <h3>4. Averbação</h3>
+            <ul>
+                <li>Comprovação física de saída do país</li>
+                <li>Data de embarque confirmada</li>
+                <li>Fechamento da DUE</li>
+            </ul>
+
+            <h3>5. Recebimento de Divisas</h3>
+            <ul>
+                <li>Comprovação de pagamento do cliente externo</li>
+                <li>Registro no Banco Central (compliance cambial)</li>
+                <li>Encerramento da operação</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ Ponto crítico:</strong> Exportação não termina no embarque. Termina apenas quando divisas são recebidas e registradas no Banco Central.
+            </div>
+        </div>
+
+        <!-- SEÇÃO 7 -->
+        <div class="page" id="section-7">
+            <h1>DUIMP vs. DI - Modernização do Siscomex</h1>
+
+            <p>A transição de DI (antigo) para DUIMP (novo) representa transformação fundamental em como o comércio exterior funciona no Brasil.</p>
+
+            <h2>O Modelo Antigo (DI)</h2>
+            <div class="highlight-box">
+                <strong>Problemas:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Múltiplos sistemas (não integrados)</li>
+                    <li>Documentos físicos + digitais (retrabalho)</li>
+                    <li>Informações duplicadas</li>
+                    <li>Análise de risco atrasada</li>
+                    <li>Baixa previsibilidade de prazos</li>
+                </ul>
+            </div>
+
+            <h2>O Novo Modelo (DUIMP)</h2>
+            <div class="success-box">
+                <strong>✓ Ganhos reais:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Dados antecipados (7 dias antes da chegada)</li>
+                    <li>Integração com LPCO (órgãos especiais)</li>
+                    <li>Análise de risco antecipada</li>
+                    <li>Desembaraço mais rápido (40-60% redução de tempo)</li>
+                    <li>Menos erros e retrabalho</li>
+                    <li>Previsibilidade máxima</li>
+                </ul>
+            </div>
+
+            <h2>Impacto Prático</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Métrica</th>
+                        <th>DI (Antigo)</th>
+                        <th>DUIMP (Novo)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lead time médio</strong></td>
+                        <td>20-30 dias</td>
+                        <td>5-15 dias</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Picos de demurrage</strong></td>
+                        <td>Frequentes</td>
+                        <td>Raros</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Taxa de erro</strong></td>
+                        <td>8-12%</td>
+                        <td>2-4%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Previsibilidade</strong></td>
+                        <td>Baixa</td>
+                        <td>Alta</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong>⚠️ Aviso:</strong> Empresas que não se adaptarem à DUIMP vão operar mais cara sem perceber. A ineficiência é invisível, mas real.
+            </div>
+        </div>
+
+        <!-- SEÇÃO 8 -->
+        <div class="page" id="section-8">
+            <h1>Custos na Importação - Landed Cost</h1>
+
+            <p><strong>Se você ainda calcula o custo de importação apenas com base no valor da mercadoria + frete, você não está fazendo conta — está fazendo aposta.</strong></p>
+
+            <h2>Composição do Custo Final (Landed Cost)</h2>
+
+            <div class="chart-container">
+                <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Título -->
+                  <text x="400" y="25" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+                    Composição do Custo Landed na Importação
+                  </text>
+
+                  <!-- Eixo X -->
+                  <line x1="80" y1="350" x2="750" y2="350" stroke="#333" stroke-width="2"/>
+                  <!-- Eixo Y -->
+                  <line x1="80" y1="50" x2="80" y2="350" stroke="#333" stroke-width="2"/>
+
+                  <!-- Barras -->
+                  <!-- Mercadoria FOB (10.000) = 46,4% -->
+                  <rect x="120" y="130" width="80" height="220" fill="#2E86AB" opacity="0.8"/>
+                  <text x="160" y="370" font-size="12" text-anchor="middle" fill="#333">Mercadoria</text>
+                  <text x="160" y="385" font-size="11" font-weight="bold" fill="#2E86AB">USD 10.000</text>
+
+                  <!-- Tributos (7.320) = 34% -->
+                  <rect x="230" y="198" width="80" height="152" fill="#A23B72" opacity="0.8"/>
+                  <text x="270" y="370" font-size="12" text-anchor="middle" fill="#333">Tributos</text>
+                  <text x="270" y="385" font-size="11" font-weight="bold" fill="#A23B72">USD 7.320</text>
+
+                  <!-- Frete (2.000) = 9,3% -->
+                  <rect x="340" y="283" width="80" height="67" fill="#F18F01" opacity="0.8"/>
+                  <text x="380" y="370" font-size="12" text-anchor="middle" fill="#333">Frete</text>
+                  <text x="380" y="385" font-size="11" font-weight="bold" fill="#F18F01">USD 2.000</text>
+
+                  <!-- Custos Portuários (1.500) = 7% -->
+                  <rect x="450" y="298" width="80" height="52" fill="#C73E1D" opacity="0.8"/>
+                  <text x="490" y="370" font-size="12" text-anchor="middle" fill="#333">Portuário</text>
+                  <text x="490" y="385" font-size="11" font-weight="bold" fill="#C73E1D">USD 1.500</text>
+
+                  <!-- Despacho (500) + Seguro (200) = 3,3% -->
+                  <rect x="560" y="326" width="80" height="24" fill="#6A994E" opacity="0.8"/>
+                  <text x="600" y="370" font-size="12" text-anchor="middle" fill="#333">Outros</text>
+                  <text x="600" y="385" font-size="11" font-weight="bold" fill="#6A994E">USD 700</text>
+
+                  <!-- Total -->
+                  <rect x="670" y="63" width="80" height="287" fill="#1a1a1a" opacity="0.9"/>
+                  <text x="710" y="370" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">TOTAL</text>
+                  <text x="710" y="385" font-size="12" font-weight="bold" fill="#1a1a1a">USD 21.520</text>
+                  <text x="710" y="100" font-size="16" font-weight="bold" fill="white" text-anchor="middle">115%</text>
+                  <text x="710" y="120" font-size="11" fill="white" text-anchor="middle">acima do</text>
+                  <text x="710" y="135" font-size="11" fill="white" text-anchor="middle">FOB</text>
+                </svg>
+            </div>
+
+            <h2>15+ Componentes do Custo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Descrição</th>
+                        <th>% Típico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mercadoria (FOB)</strong></td>
+                        <td>Valor negociado com fornecedor</td>
+                        <td>46%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Frete Internacional</strong></td>
+                        <td>Transporte até porto/aeroporto Brasil</td>
+                        <td>9%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Seguro Internacional</strong></td>
+                        <td>Cobertura de risco (0,1%-2% FOB)</td>
+                        <td>1%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>THC</strong></td>
+                        <td>Terminal Handling Charge (porto)</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Armazenagem</strong></td>
+                        <td>Custos portuários conforme dias</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Taxa de Internação</strong></td>
+                        <td>Transporte porto → armazém</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Despacho Aduaneiro</strong></td>
+                        <td>Honorários despachante</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tributos (II+IPI+PIS+COFINS+ICMS)</strong></td>
+                        <td>Carga tributária sobre CIF</td>
+                        <td>34%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Exemplo Prático Realista</h2>
+            <div class="highlight-box">
+                <strong>Cenário:</strong> Importação de eletrônicos da China<br>
+                <br>
+                <strong>Cálculo:</strong><br>
+                • Mercadoria FOB: USD 10.000<br>
+                • Frete: USD 2.000<br>
+                • Seguro: USD 200<br>
+                • Base CIF: USD 12.200<br>
+                <br>
+                <strong>Custos Brasil:</strong><br>
+                • Tributos (~60%): USD 7.320<br>
+                • Custos portuários + internação: USD 1.500<br>
+                • Despacho: USD 500<br>
+                <br>
+                <strong>⚠️ Custo final: USD 21.520</strong><br>
+                <strong>⚠️ Ou seja: +115% acima do preço FOB negociado!</strong>
+            </div>
+
+            <h2>Sensibilidade de Custos</h2>
+            <p>O que faz o custo variar?</p>
+            <ul>
+                <li><strong>Cenário geopolítico:</strong> Guerras, rotas, bloqueios</li>
+                <li><strong>Preço do frete:</strong> Flutuação de até +600% em crises</li>
+                <li><strong>Classificação fiscal (NCM):</strong> Alíquota de tributos varia enormemente</li>
+                <li><strong>Estado de destino:</strong> ICMS varia por estado</li>
+                <li><strong>Tempo de armazenagem:</strong> Demurrage crescente a cada dia</li>
+                <li><strong>Necessidade de LPCO:</strong> Órgãos especiais geram custos</li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 9 -->
+        <div class="page" id="section-9">
+            <h1>Contêineres - Escolha Estratégica</h1>
+
+            <p><strong>Se você ainda acha que "contêiner é tudo igual", já começou perdendo dinheiro na operação.</strong></p>
+
+            <h2>Por que a Escolha é Estratégica?</h2>
+            <p>A escolha do contêiner impacta:</p>
+            <ul>
+                <li><strong>Custo de frete:</strong> Diferença de USD 1.800-5.000 por shipment</li>
+                <li><strong>Otimização de espaço:</strong> Carga volumosa vs. densa</li>
+                <li><strong>Risco logístico:</strong> Proteção adequada para tipo de carga</li>
+                <li><strong>Lead time:</strong> Disponibilidade de tipos específicos</li>
+            </ul>
+
+            <h2>8 Tipos de Contêineres</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Dimensão</th>
+                        <th>Capacidade</th>
+                        <th>Ideal para</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>20' Dry</strong></td>
+                        <td>20 pés</td>
+                        <td>~33 m³ / 28 ton</td>
+                        <td>Cargas densas (metais, químicos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>40' Dry</strong></td>
+                        <td>40 pés</td>
+                        <td>~67 m³ / 28 ton</td>
+                        <td>Cargas volumosas (eletrônicos, têxteis)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>40' High Cube</strong></td>
+                        <td>40 pés (+30cm altura)</td>
+                        <td>~76 m³ / 28 ton</td>
+                        <td>Máxima volumetria (melhor aproveitamento vertical)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reefer (Refrigerado)</strong></td>
+                        <td>20' ou 40'</td>
+                        <td>Com controle de temperatura</td>
+                        <td>Alimentos, medicamentos, produtos químicos sensíveis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Open Top</strong></td>
+                        <td>20' ou 40'</td>
+                        <td>Sem teto rígido</td>
+                        <td>Cargas altas (máquinas, equipamentos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flat Rack</strong></td>
+                        <td>20' ou 40'</td>
+                        <td>Sem laterais</td>
+                        <td>Cargas fora de padrão (OOG), máquinas pesadas</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tank Container</strong></td>
+                        <td>20' ou 40'</td>
+                        <td>Tanque interno</td>
+                        <td>Líquidos (químicos, combustíveis, alimentos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pallet Wide</strong></td>
+                        <td>Especial</td>
+                        <td>Maior largura</td>
+                        <td>Cargas que não cabem em largura padrão</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong>⚠️ Erro comum:</strong> Muitas empresas usam 40' Dry quando deveriam usar 40' HC — e literalmente deixam dinheiro "no ar" (espaço não aproveitado).
+            </div>
+
+            <h2>Decisão Multifuncional</h2>
+            <p>Escolher contêiner não é responsabilidade apenas de comex:</p>
+            <ul>
+                <li><strong>Demanda:</strong> Quantos volumes? Que frequência?</li>
+                <li><strong>Operações:</strong> Qual tipo de carga? Peso? Dimensões?</li>
+                <li><strong>Financeiro:</strong> Qual é o impacto de custo?</li>
+                <li><strong>Comex:</strong> Disponibilidade de tipos? Lead time?</li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 10 -->
+        <div class="page" id="section-10">
+            <h1>Geopolítica e Impactos no Comex</h1>
+
+            <p><strong>O que está fora do seu controle, mas impacta tudo.</strong></p>
+
+            <h2>O que é Geopolítica no Comex?</h2>
+            <p>Geopolítica é a forma como países utilizam poder econômico, militar e estratégico para influenciar mercados, rotas e cadeias de suprimento.</p>
+
+            <div class="highlight-box">
+                <strong>Impactos diretos no comex:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Rotas marítimas (bloqueios, desvios)</li>
+                    <li>Custos de combustível (flutuação extrema)</li>
+                    <li>Disponibilidade de navios (oferta reduzida)</li>
+                    <li>Oferta de produtos (embargos, restrições)</li>
+                    <li>Câmbio (volatilidade cambial)</li>
+                    <li>Preços globais (commodities)</li>
+                </ul>
+            </div>
+
+            <h2>Caso Histórico: COVID-19</h2>
+            <p>Durante a pandemia, o mundo assistiu a um colapso logístico sem precedentes:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Métrica</th>
+                        <th>Antes da Crise</th>
+                        <th>Pico da Crise</th>
+                        <th>Variação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Frete Ásia → Brasil</strong></td>
+                        <td>USD 1.500-2.000</td>
+                        <td>Acima de USD 10.000</td>
+                        <td>+400% a +600%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lead time médio</strong></td>
+                        <td>30-40 dias</td>
+                        <td>60-80 dias</td>
+                        <td>+30% a +80%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custos logísticos totais</strong></td>
+                        <td>Baseline</td>
+                        <td>+20% a +50%</td>
+                        <td>+20% a +50%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong>⚠️ Lição:</strong> O problema nunca foi só o vírus — foi a dependência excessiva de cadeias concentradas (China, rotas marítimas específicas).
+            </div>
+
+            <h2>Cenário Atual: 2025-2026</h2>
+            <p>Tensões globais continuam pressionando comex:</p>
+            <ul>
+                <li><strong>Oriente Médio:</strong> Bloqueios em rotas estratégicas (Mar Vermelho)</li>
+                <li><strong>Leste Europeu:</strong> Conflito contínuo afetando rotas</li>
+                <li><strong>Protecionismo:</strong> Políticas de "friendshoring" e "nearshoring"</li>
+                <li><strong>Reconfiguração de cadeias:</strong> Diversificação de fornecedores</li>
+            </ul>
+
+            <h2>Projeções de Impacto</h2>
+            <div class="highlight-box">
+                <strong>Frete internacional:</strong> Possível aumento +15% a +35%<br>
+                <strong>Lead time:</strong> Possível aumento +10% a +40%<br>
+                <strong>Custos totais de importação:</strong> Impacto geral +10% a +25%<br>
+                <br>
+                <strong>Causa raiz:</strong> Redução de rotas seguras + aumento de combustível + prêmios de risco
+            </div>
+
+            <h2>Estratégias de Mitigação</h2>
+            <div class="success-box">
+                <strong>✓ Empresas maduras não tentam prever o futuro. Elas se preparam para ele:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Diversificação de fornecedores (China + Vietnã + Índia)</li>
+                    <li>Planejamento logístico antecipado (não reativo)</li>
+                    <li>Uso estratégico de modais (reduz dependência de marítimo)</li>
+                    <li>Gestão ativa de estoque (buffers de contingência)</li>
+                    <li>Análise constante de cenário global</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SEÇÃO 11 -->
+        <div class="page" id="section-11">
+            <h1>Armadores - Poder e Influência</h1>
+
+            <p><strong>Se você ainda enxerga o armador como "apenas quem transporta o container", já começou errado.</strong></p>
+
+            <h2>Quem Controla Realmente o Comex?</h2>
+            <p>O armador não só transporta carga. Ele:</p>
+            <ul>
+                <li>Define rotas marítimas globais</li>
+                <li>Controla espaço disponível em navios</li>
+                <li>Estabelece fretes internacionais</li>
+                <li>Determina condições contratuais (termos do BL)</li>
+                <li>Gerencia oferta de espaço (pode reduzir para aumentar preços)</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ Realidade:</strong> Quem controla o navio controla muito mais que a rota. Controla também preço, prazo e contingência.
+            </div>
+
+            <h2>Os 5 Gigantes Globais</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Armador</th>
+                        <th>Origem</th>
+                        <th>Market Share Aproximado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1º</strong></td>
+                        <td>Mediterranean Shipping Company (MSC)</td>
+                        <td>Suíça</td>
+                        <td>~18%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2º</strong></td>
+                        <td>A.P. Moller-Maersk (Maersk)</td>
+                        <td>Dinamarca</td>
+                        <td>~16%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3º</strong></td>
+                        <td>CMA CGM Group</td>
+                        <td>França</td>
+                        <td>~15%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4º</strong></td>
+                        <td>COSCO Shipping</td>
+                        <td>China</td>
+                        <td>~12%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5º</strong></td>
+                        <td>Hapag-Lloyd</td>
+                        <td>Alemanha</td>
+                        <td>~11%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <strong>📌 Concentração:</strong> Esses 5 armadores dominam ~72% do mercado marítimo global. Quando poucos dominam o mercado, eles conseguem influenciar preços e reduzir oferta.
+            </div>
+
+            <h2>O Bill of Lading (BL) - Documento Mais Crítico</h2>
+            <p>O BL é emitido pelo armador e tem 3 funções principais:</p>
+            <ul>
+                <li><strong>Comprovante de embarque:</strong> Prova que mercadoria foi carregada</li>
+                <li><strong>Contrato de transporte:</strong> Define termos entre armador e remitente</li>
+                <li><strong>Título de posse da carga:</strong> Quem tem BL tem posse da carga</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ Impacto real:</strong> Sem BL, sua carga simplesmente não existe juridicamente. Você negocia preço com fornecedor mas já leu as condições do BL do armador?
+            </div>
+
+            <h2>Instrumentos de Poder do Armador</h2>
+            <h3>1. Force Majeure (Força Maior)</h3>
+            <p>Cláusula que protege o armador em situações "fora do controle":</p>
+            <ul>
+                <li>Guerras</li>
+                <li>Greves portuárias</li>
+                <li>Condições climáticas extremas</li>
+                <li>Fechamento de rotas estratégicas</li>
+            </ul>
+            <p><strong>Resultado:</strong> Quando crises acontecem, risco fica com importador/exportador, não com armador.</p>
+
+            <h3>2. Demurrage e Detention</h3>
+            <p>Multas por uso indevido do container:</p>
+            <ul>
+                <li><strong>Demurrage:</strong> Atraso na devolução dentro do porto (USD 50-300/dia)</li>
+                <li><strong>Detention:</strong> Atraso fora do porto (USD 50-200/dia)</li>
+            </ul>
+            <p><strong>Verdade:</strong> Esses custos são altamente lucrativos para armadores.</p>
+
+            <h3>3. Blank Sailing (Cancelamento de Rotas)</h3>
+            <p>Armadores cancelam escalas ou viagens quando demanda cai:</p>
+            <ul>
+                <li>Menos oferta de navios</li>
+                <li>Frete fica mais caro</li>
+                <li>Lead time aumenta</li>
+            </ul>
+
+            <h3>4. Overbooking</h3>
+            <p>Armadores vendem mais espaço que têm disponível:</p>
+            <ul>
+                <li>Se faltar espaço, alguém fica para trás</li>
+                <li>Quem perde é o importador/exportador</li>
+            </ul>
+        </div>
+
+        <!-- SEÇÃO 12 -->
+        <div class="page" id="section-12">
+            <h1>Caso Prático - Importação Realista com 4 Erros</h1>
+
+            <h2>Cenário</h2>
+            <p>Empresa importa eletrônicos da China via modal marítimo.</p>
+
+            <h2>Os 4 Erros Estratégicos</h2>
+            <h3>Erro 1: Classificação NCM Incorreta</h3>
+            <div class="warning-box">
+                <strong>O que aconteceu:</strong> Produto foi classificado em NCM de eletrônico comum, quando na verdade era eletrônico com "inteligência".<br>
+                <br>
+                <strong>Impacto:</strong> Alíquota de tributos aumentou de 15% para 35%. Diferença não foi antecipada.<br>
+                <br>
+                <strong>Resultado:</strong> Custo final +USD 2.000 (não previsto no orçamento)
+            </div>
+
+            <h3>Erro 2: Incoterm CIF Inadequado</h3>
+            <div class="warning-box">
+                <strong>O que aconteceu:</strong> Negociado CIF. Empresa perdeu controle sobre escolha do armador e frete.<br>
+                <br>
+                <strong>Impacto:</strong> Armador escolhido não tinha rota direta. Frete desviou por rota alternativa = atraso de 15 dias.<br>
+                <br>
+                <strong>Resultado:</strong> Demurrage acumulado = +USD 1.500
+            </div>
+
+            <h3>Erro 3: Omissão de LPCO</h3>
+            <div class="warning-box">
+                <strong>O que aconteceu:</strong> Produto requer certificação de órgão especial. Não foi solicitado ao fornecedor.<br>
+                <br>
+                <strong>Impacto:</strong> Carga chegou mas não pode ser desembaraçada. Ficar no porto esperando certificação.<br>
+                <br>
+                <strong>Resultado:</strong> Armazenagem extra = +USD 800 + Lead time +20 dias
+            </div>
+
+            <h3>Erro 4: Documentação Incompleta</h3>
+            <div class="warning-box">
+                <strong>O que aconteceu:</strong> Documentação tinha erros menores (discrepâncias em peso, volumes). Carga caiu em canal vermelho.<br>
+                <br>
+                <strong>Impacto:</strong> Conferência física completa = 10 dias. Custos portuários crescentes.<br>
+                <br>
+                <strong>Resultado:</strong> Demurrage + armazenagem = +USD 2.700
+            </div>
+
+            <h2>Resultado Total</h2>
+            <div class="highlight-box">
+                <strong>Impacto financeiro total:</strong> USD 7.000 adicionais<br>
+                <strong>Lead time:</strong> 90 dias (ao invés de 35 planejados)<br>
+                <strong>Taxa de retorno do capital:</strong> Comprometida<br>
+                <br>
+                <strong>⚠️ Lição:</strong> O problema não estava no frete. Estava na estratégia de planejamento, negociação e documentação.
+            </div>
+        </div>
+
+        <!-- SEÇÃO 13 -->
+        <div class="page" id="section-13">
+            <h1>Conclusão e Recomendações</h1>
+
+            <h2>A Dicotomia: Comex Reativo vs. Estratégico</h2>
+            <p>Existem duas formas de operar em comércio exterior:</p>
+
+            <h3>Comex Reativo</h3>
+            <div class="warning-box">
+                <strong>Características:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Recebe pedido → age rápido mas sem planejamento</li>
+                    <li>Descobre erros no caminho</li>
+                    <li>Paga demurrage, armazenagem, correções</li>
+                    <li>Margem corroída por custos invisíveis</li>
+                    <li>Vivem apagando incêndios</li>
+                </ul>
+            </div>
+
+            <h3>Comex Estratégico</h3>
+            <div class="success-box">
+                <strong>Características:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Planeja 60 dias antes</li>
+                    <li>Previne erros antes que aconteçam</li>
+                    <li>Controla custos visíveis E invisíveis</li>
+                    <li>Negocia de posição de força</li>
+                    <li>Operação previsível, margem protegida</li>
+                </ul>
+            </div>
+
+            <h2>Mudança de Paradigma Necessária</h2>
+            <p>Comércio exterior não é mais sobre preencher documentos.</p>
+            <p>É sobre:</p>
+            <ul>
+                <li><strong>Tomada de decisão:</strong> Incoterm, modal, fornecedor</li>
+                <li><strong>Gestão de risco:</strong> Geopolítica, parametrização, compliance</li>
+                <li><strong>Estratégia operacional:</strong> Lead time, custo, competitividade</li>
+            </ul>
+
+            <h2>Recomendações por Stakeholder</h2>
+            <h3>Para Profissionais de Comex</h3>
+            <div class="highlight-box">
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Desenvolva capacidade de análise de cenário global</li>
+                    <li>Cultive relacionamento com fornecedores (parceria, não transação)</li>
+                    <li>Domine planilha de landed cost (conhecimento de cada componente)</li>
+                    <li>Mantenha-se atualizado em legislação (mudanças frequentes impactam)</li>
+                </ul>
+            </div>
+
+            <h3>Para Gestores de Operações/Finanças</h3>
+            <div class="highlight-box">
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Invista em capacitação de equipe comex (retorno é direto em margem)</li>
+                    <li>Implemente processos multifuncionais (comex não funciona sozinho)</li>
+                    <li>Monitore indicadores (lead time, parametrização, custo/ton, demurrage)</li>
+                    <li>Revise contratos regularmente (fornecedores, transportadores, armadores)</li>
+                </ul>
+            </div>
+
+            <h3>Para Diretores/C-Level</h3>
+            <div class="highlight-box">
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Comex não é back-office</strong> — é fator de competitividade</li>
+                    <li><strong>Investimento em tecnologia</strong> (Siscomex, sistemas custos) tem ROI positivo</li>
+                    <li><strong>Diversifique cadeias</strong> (nearshoring, friendshoring reduz risco geopolítico)</li>
+                    <li><strong>Alinhe governança de comex</strong> com estratégia corporativa</li>
+                </ul>
+            </div>
+
+            <h2>Empresas que Dominam Comex End-to-End Conseguem:</h2>
+            <div class="success-box">
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>✓ Controlar custo real (não estimado)</li>
+                    <li>✓ Negociar de posição de força (com fornecedores e transportadores)</li>
+                    <li>✓ Planejar antecipadamente (não reagir a problemas)</li>
+                    <li>✓ Diversificar riscos (geopolíticos, cambiais, logísticos)</li>
+                    <li>✓ Proteger margem operacional</li>
+                    <li>✓ Operar com previsibilidade</li>
+                </ul>
+            </div>
+
+            <h2>Mensagem Final</h2>
+            <div class="highlight-box">
+                <strong>No comércio exterior, você não compete apenas com outras empresas. Você compete com:</strong>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Geopolítica global</li>
+                    <li>Fretes voláteis</li>
+                    <li>Armadores poderosos</li>
+                    <li>Regulação dinâmica</li>
+                    <li>Cadeia concentrada</li>
+                </ul>
+                <br>
+                <strong>Ignorar geopolítica não elimina o risco. Só garante que você será surpreendido por ele.</strong><br>
+                <br>
+                <strong>A competitividade em comex não está na velocidade das decisões. Está na profundidade da análise e qualidade da execução.</strong><br>
+                <br>
+                <strong>Dominar comex end-to-end não é vantagem. É requisito de sobrevivência em cenários voláteis.</strong>
+            </div>
+
+            <div style="margin-top: 60px; padding-top: 30px; border-top: 2px solid #2E86AB; text-align: center;">
+                <p style="color: #666; font-size: 14px;">Material preparado com rigor técnico, visão estratégica e foco em aplicabilidade prática.</p>
+                <p style="color: #999; font-size: 12px; margin-top: 10px;">Estude, questione, implemente. A competitividade em comex está na profundidade da análise, não na velocidade das decisões.</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p><strong>Comércio Exterior Brasil 2026 - E-book Completo</strong></p>
+            <p>Autora: Ester Nascimento</p>
+            <p>Versão 2.0 com Gráficos e Ilustrações</p>
+            <p>Material preparado para distribuição interna | Março 2026</p>
+            <p style="margin-top: 20px; color: #aaa; font-size: 12px;">© 2026 | Todos os direitos reservados | Distribuição restrita às partes autorizadas</p>
+        </div>
+    </div>
+
+    <div class="toc-sticky" onclick="document.querySelector('.toc-page').scrollIntoView({behavior: 'smooth'});">
+        📑
+    </div>
+
+    <script>
+        // Funcionalidade para manter track da página atual
+        window.addEventListener('scroll', function() {
+            const pages = document.querySelectorAll('.page');
+            const pageIndicator = document.querySelector('.page-indicator');
+
+            pages.forEach((page, index) => {
+                const rect = page.getBoundingClientRect();
+                if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+                    if (pageIndicator) {
+                        pageIndicator.textContent = `Página ${index + 1} de ${pages.length}`;
+                    }
+                }
+            });
+        });
+
+        // Smooth scroll para links do TOC
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
